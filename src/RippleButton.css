@@ -29,7 +29,7 @@ body {
   top: var(--y);
   left: var(--x);
   transform: translate(-50%, -50%) scale(0);
-  transition: transform 350ms;
+  transition: transform 500ms;
   z-index: -1;
   display: block;
   width: 150%;
@@ -44,7 +44,7 @@ body {
 }
 
 .pulse::before {
-  animation: pulse 350ms;
+  animation: pulse 500ms;
 }
 
 @keyframes pulse {

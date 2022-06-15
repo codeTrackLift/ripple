@@ -12,7 +12,7 @@ const addListener = () => {
 
   }
 
-  rippleButton.addEventListener('click', (e) => {
+  rippleButton.addEventListener('mouseup', (e) => {
     mousePositionToCustomProp(e, rippleButton);
     rippleButton.classList.add('pulse');
     rippleButton.addEventListener('animationend', () => {

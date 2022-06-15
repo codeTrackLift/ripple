@@ -39,7 +39,7 @@ export default function RippleButton() {
     <div id='container'>
       <h1 style={{margin:'0 auto'}}>click button to make a ripple</h1>
       <div>
-        <label htmlFor="colorpicker">Background Color: </label>
+        <label htmlFor="colorpicker">background color: </label>
         <input 
           type="color" 
           id="colorpicker" 
@@ -47,10 +47,15 @@ export default function RippleButton() {
           onChange={onChange}
         ></input>
       </div>
+      <div>
+        <span htmlFor='buttonColor'>button color: </span>
+        <button 
+          onClick={() => setLightMode(!lightMode)}
+        >{lightMode ? 'Light Mode' : 'Dark Mode'}</button>
+      </div>
 
       <button 
         className={lightMode ? 'ripple-button light' : 'ripple-button'}
-        onClick={() => setLightMode(!lightMode)}
       >Click Me</button>
     </div>
   );

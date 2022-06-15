@@ -10,7 +10,8 @@ body {
   flex-direction: column;
   gap: 3rem;
   place-items: center;
-  text-shadow: 1px 1px 1px white;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 .ripple-button {

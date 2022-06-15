@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ripple/static/css/main.6d28ddfc.css",
+    "main.js": "/ripple/static/js/main.aa264af1.js",
+    "index.html": "/ripple/index.html",
+    "main.6d28ddfc.css.map": "/ripple/static/css/main.6d28ddfc.css.map",
+    "main.aa264af1.js.map": "/ripple/static/js/main.aa264af1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d28ddfc.css",
+    "static/js/main.aa264af1.js"
+  ]
+}

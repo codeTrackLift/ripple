@@ -29,13 +29,13 @@ body {
   top: var(--y);
   left: var(--x);
   transform: translate(-50%, -50%) scale(0);
-  transition: transform 500ms;
+  transition: transform 350ms;
   z-index: -1;
   display: block;
   width: 150%;
   aspect-ratio: 1 /1 ;
   border-radius: 50%;
-  background: white;
+  background: gainsboro;
   opacity: 1;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .pulse::before {
-  animation: pulse 500ms;
+  animation: pulse 350ms;
 }
 
 @keyframes pulse {

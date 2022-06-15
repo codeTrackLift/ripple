@@ -3,10 +3,14 @@ body {
 }
 
 #container {
+  place-items: center;
   font-family: system-ui;
   min-height: 100vh;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   place-items: center;
+  text-shadow: 1px 1px 1px white;
 }
 
 .ripple-button {

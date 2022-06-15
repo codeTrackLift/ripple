@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import "./RippleButton.css";
 
 const addListener = () => {
@@ -25,9 +25,28 @@ const addListener = () => {
 
 export default function RippleButton() {
   const [lightMode, setLightMode] = useState(false);
+  const [color, setColor] = useState('#505050');
+
+  const onChange = (e) => {
+    setColor(e.target.value);
+  }
+
+  useEffect(() => {
+    document.body.style.backgroundColor = color;
+  }, [color])
 
   return (
     <div id='container'>
+      <div>
+        <label htmlFor="colorpicker">Background Color: </label>
+        <input 
+          type="color" 
+          id="colorpicker" 
+          value={color}
+          onChange={onChange}
+        ></input>
+      </div>
+
       <button 
         className={lightMode ? 'ripple-button light' : 'ripple-button'}
         onClick={() => setLightMode(!lightMode)}

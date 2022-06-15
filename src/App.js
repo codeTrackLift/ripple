@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { addListener } from './ripple.js';
+
+const buttonStyle = {
+  display: 'inline-grid',
+  placeItems: 'center',
+  position: 'relative',
+  isolation: 'isolate',
+  appearance: 'none',
+  cursor: 'pointer',
+  fontSize: '3rem',
+  padding: '2rem 6rem',
+  textTransform: 'uppercase',
+  backgroundColor: 'transparent',
+  color: 'hsl(200 100% 65%)',
+  border: '5px solid currentColor',
+  borderRadius: '0.125rem',
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button className="ripple-button" style={buttonStyle}>Click Me</button>
     </div>
   );
 }
+
+setTimeout(addListener);
 
 export default App;

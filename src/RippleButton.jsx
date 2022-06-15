@@ -37,6 +37,7 @@ export default function RippleButton() {
 
   return (
     <div id='container'>
+      <h1 style={{margin:'0 auto'}}>click button to make a ripple</h1>
       <div>
         <label htmlFor="colorpicker">Background Color: </label>
         <input 

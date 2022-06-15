@@ -1,5 +1,8 @@
 body {
-  background-color: black;
+  background: rgb(50,50,50);
+}
+
+#container {
   font-family: system-ui;
   min-height: 100vh;
   display: grid;
@@ -13,14 +16,18 @@ body {
   isolation: isolate;
   appearance: none;
   cursor: pointer;
-  font-size: 3rem;
-  padding: 2rem 6rem;
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
   text-transform: uppercase;
   background-color: transparent;
   color: white;
-  border: 5px solid currentColor;
+  border: 3px solid currentColor;
   border-radius: 0.125rem;
   overflow: hidden;
+}
+
+.ripple-button.light {
+  color: rgb(25,25,25);
 }
 
 .ripple-button::before {
@@ -37,6 +44,10 @@ body {
   border-radius: 50%;
   background: gainsboro;
   opacity: 1;
+}
+
+.ripple-button.light::before {
+  background: black;
 }
 
 .ripple-button:active::before {

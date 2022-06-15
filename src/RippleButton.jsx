@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import "./RippleButton.css";
 
 const addListener = () => {
@@ -23,9 +24,14 @@ const addListener = () => {
 }
 
 export default function RippleButton() {
+  const [lightMode, setLightMode] = useState(false);
+
   return (
-    <div>
-      <button className="ripple-button">Click Me</button>
+    <div id='container'>
+      <button 
+        className={lightMode ? 'ripple-button light' : 'ripple-button'}
+        onClick={() => setLightMode(!lightMode)}
+      >Click Me</button>
     </div>
   );
 }

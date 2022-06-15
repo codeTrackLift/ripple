@@ -1,7 +1,7 @@
 body {
   background: rgb(50,50,50);
+  overflow-x: hidden;
 }
-
 
 #container {
   place-items: center;
@@ -9,6 +9,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin: 3rem auto;
   gap: 3rem;
   place-items: center;
   color: white;

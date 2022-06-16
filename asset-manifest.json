@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ripple/static/css/main.5e62ac12.css",
-    "main.js": "/ripple/static/js/main.c79ac035.js",
+    "main.css": "/ripple/static/css/main.c1d5ed39.css",
+    "main.js": "/ripple/static/js/main.54bdf375.js",
     "index.html": "/ripple/index.html",
-    "main.5e62ac12.css.map": "/ripple/static/css/main.5e62ac12.css.map",
-    "main.c79ac035.js.map": "/ripple/static/js/main.c79ac035.js.map"
+    "main.c1d5ed39.css.map": "/ripple/static/css/main.c1d5ed39.css.map",
+    "main.54bdf375.js.map": "/ripple/static/js/main.54bdf375.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e62ac12.css",
-    "static/js/main.c79ac035.js"
+    "static/css/main.c1d5ed39.css",
+    "static/js/main.54bdf375.js"
   ]
 }

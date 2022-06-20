@@ -51,7 +51,7 @@ body {
   aspect-ratio: 1 /1 ;
   border-radius: 50%;
   background: gainsboro;
-  opacity: 1;
+  opacity: var(--opacity);
 }
 
 .ripple-button.light::before {

@@ -12,7 +12,7 @@ const inputStyle = {
   boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px',
 }
 
-export const ButtonControls = ({lightMode, setLightMode}) => {
+export const ButtonControls = ({lightMode, setLightMode, opacity, setOpacity}) => {
   const [color, setColor] = useState('#303030');
 
   const onChange = (e) => {
@@ -42,6 +42,20 @@ export const ButtonControls = ({lightMode, setLightMode}) => {
           onClick={() => setLightMode(!lightMode)}
           style={buttonStyle}
         >{lightMode ? 'Light Mode' : 'Dark Mode'}</button>
+      </div>
+      <div>
+        <label htmlFor='opacity'>ripple opacity: </label>
+        <input
+          id='opacity'
+          min='0.1'
+          max='1'
+          step='0.1'
+          type='range'
+          value={opacity}
+          onChange={(e) => setOpacity(e.target.value)}
+          style={inputStyle}
+        >
+        </input>
       </div>
     </>
   )

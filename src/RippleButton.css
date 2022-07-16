@@ -23,8 +23,8 @@ body {
   isolation: isolate;
   appearance: none;
   cursor: pointer;
-  font-size: 1.5rem;
-  padding: 1rem 3rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
   text-transform: uppercase;
   background-color: transparent;
   color: white;
@@ -44,11 +44,11 @@ body {
   top: var(--y);
   left: var(--x);
   transform: translate(-50%, -50%) scale(0);
-  transition: transform 500ms;
+  transition: transform 250ms;
   z-index: -1;
   display: block;
   width: 150%;
-  aspect-ratio: 1 /1 ;
+  aspect-ratio: 1 /1;
   border-radius: 50%;
   background: gainsboro;
   opacity: var(--opacity);
@@ -69,6 +69,17 @@ body {
 @keyframes pulse {
   100% {
     transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+}
+
+.touch::before {
+  animation: touchAnimation 500ms;
+}
+
+@keyframes touchAnimation {
+  100% {
+    transform: translate(0%, 0%) scale(1);
     opacity: 0;
   }
 }

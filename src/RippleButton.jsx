@@ -16,16 +16,24 @@ export default function RippleButton() {
       element.style.setProperty('--x', posX + 'px');
       element.style.setProperty('--y', posY + 'px');
       element.style.setProperty('--opacity', opacity);
-  
     }
   
-    rippleButton.addEventListener('mouseup', (e) => {
+    rippleButton.addEventListener('touch', (e) => {
+      mousePositionToCustomProp(e, rippleButton, opacity);
+      rippleButton.classList.add('touch');
+      rippleButton.addEventListener('animationend', () => {
+        rippleButton.classList.remove('touch');
+      })
+    });
+
+    rippleButton.addEventListener('click', (e) => {
       mousePositionToCustomProp(e, rippleButton, opacity);
       rippleButton.classList.add('pulse');
       rippleButton.addEventListener('animationend', () => {
         rippleButton.classList.remove('pulse');
       })
     });
+
   }
 
   setTimeout(addListener);

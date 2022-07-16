@@ -12,6 +12,16 @@ const inputStyle = {
   boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px',
 }
 
+const h1Style = {
+  margin:'-2rem auto 0 auto'
+}
+
+const h2Style = {
+  margin:'-2rem auto 0 auto',
+  color: 'black',
+  textShadow: '1px 1px 1px white'
+}
+
 export const ButtonControls = ({lightMode, setLightMode, opacity, setOpacity}) => {
   const [color, setColor] = useState('#303030');
 
@@ -25,8 +35,8 @@ export const ButtonControls = ({lightMode, setLightMode, opacity, setOpacity}) =
 
   return (
     <>
-      <h1 style={{margin:'-2rem auto 0 auto'}}>Ripple Button</h1>
-      <h2 style={{margin:'-2rem auto 0 auto', color: 'black', textShadow: '1px 1px 1px white'}}>UI Experiment</h2>
+      <h1 style={h1Style}>Ripple Button</h1>
+      <h2 style={h2Style}>UI Experiment</h2>
       <div>
         <label htmlFor="colorpicker">background color: </label>
         <input 

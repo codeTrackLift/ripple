@@ -25,7 +25,8 @@ export const ButtonControls = ({lightMode, setLightMode, opacity, setOpacity}) =
 
   return (
     <>
-      <h1 style={{margin:'0 auto'}}>click button to make a ripple</h1>
+      <h1 style={{margin:'-2rem auto 0 auto'}}>Ripple Button</h1>
+      <h2 style={{margin:'-2rem auto 0 auto', color: 'black', textShadow: '1px 1px 1px white'}}>UI Experiment</h2>
       <div>
         <label htmlFor="colorpicker">background color: </label>
         <input 

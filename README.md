@@ -12,7 +12,9 @@ This "mini-project" was developed during my [Forbes Media Internship](https://ww
 
 ## About
 
-See this [blog article](https://www.codebypete.com/pages/blog.html#blog11Button) for more details about my first 3 weeks as a 43 year old software engineering intern.
+- See this [blog article](https://www.codebypete.com/pages/blog.html#blog13Button) for more details about contributing to the UI Showcase.
+
+- See this [blog article](https://www.codebypete.com/pages/blog.html#blog11Button) for more details about my first 3 weeks as a 43 year old software engineering intern.
 
 ## MIT License
 
